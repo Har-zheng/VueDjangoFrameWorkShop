@@ -3,7 +3,10 @@ from datetime import datetime
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 # Create your models here.
-
+GENDER_CHOICES=(
+    ("male", u"男"),
+    ("female",u"女")
+                )
 class UserProfile(AbstractUser):
     """
     用户

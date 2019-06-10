@@ -43,10 +43,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'DjangoUeditor',
-    'users',
-    'goods',
-    'trade',
-    'user_operatipn'
+    'users.apps.UsersConfig',
+    'goods.apps.GoodsConfig',
+    'trade.apps.TradeConfig',
+    'user_operatipn.apps.UserOperatipnConfig'
 ]
 
 MIDDLEWARE = [
@@ -88,7 +88,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mxshop',
         'USER': 'root',
-        'PASSWORD': 'ZHZhongzhen123',
+        'PASSWORD': 'hongzhen123',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
