@@ -14,11 +14,10 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/apps" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/extra_apps" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/apps" />
+      <excludeFolder url="file://$MODULE_DIR$/extra_apps" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.7 (VueDjangoFrameWorkShop)" jdkType="Python SDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">

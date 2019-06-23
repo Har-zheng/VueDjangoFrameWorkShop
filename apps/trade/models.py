@@ -1,12 +1,15 @@
 from datetime import datetime
 from django.db import models
+# 传统做法，从user.models中引入
+from users.models import UserProfile
 from goods.models import Goods
 # 但是当第三方模块根本不知道你的user model在哪里如何导入呢
 from django.contrib.auth import get_user_model
 # 这个方法会去setting中找AUTH_USER_MODEL
 User = get_user_model()
-# Create your models here.
 
+
+# Create your models here.
 class ShoppingCart(models.Model):
     """
     购物车
@@ -18,7 +21,7 @@ class ShoppingCart(models.Model):
     add_time = models.DateTimeField(default=datetime.now, verbose_name=u"添加时间")
 
     class Meta:
-        verbose_name = '购物车喵'
+        verbose_name = '购物车'
         verbose_name_plural = verbose_name
         unique_together = ("user", "goods")
 
@@ -90,4 +93,3 @@ class OrderGoods(models.Model):
 
     def __str__(self):
         return str(self.order.order_sn)
-
